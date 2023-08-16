@@ -36,9 +36,6 @@ const AboutPage: NextPage<AboutPageProps> = (props) => {
           zrakoplovov.
         </Typography>
         <Typography className="dark:text-white text-left">
-          Dobrodošli na spletni strani KAMzDRONOM. Slednja je nastala v sklopu izdelave magistrskega dela Luke Zaletelja na Oddelku za
-          geografijo Filozofske fakultete Univerze v Ljubljani z naslovom Geoinformacijska podpora odločanju pri opredelitvi omejitev in
-          primernosti za letenje brezpilotnih zrakoplovov. <br /><br />
           Namen magistrskega dela je bil s pomočjo geografskih informacijskih sistemov in metode večkriterijskega odločanja izdelati karto
           omejitev za letenje brezpilotnih zrakoplovov oz. dronov v t. i. odprti kategoriji na območju celotne Republike Slovenije, karto
           primernosti na območju Mestne občine Ljubljana ter vzpostaviti interaktivno spletno aplikacijo s prikazanimi rezultati raziskave

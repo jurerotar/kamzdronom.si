@@ -71,7 +71,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
             variant="h2"
             className="text-white text-center text-xl md:text-3xl"
           >
-            Izbira kategorije
+            Izbira podkategorije
           </Typography>
           <div className="flex flex-col gap-2">
             <Typography className="dark:text-white">
@@ -132,7 +132,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
                   className="flex justify-center items-center bg-blue-600 colors-transition hover:bg-blue-700 rounded-md text-white font-medium px-4 py-2 w-fit"
                   disabled
                 >
-                  Izberi kategorijo
+                  Izberi podkategorijo
                 </Button>
               )}
             </div>
@@ -161,7 +161,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
                   className="flex justify-center items-center bg-blue-600 colors-transition hover:bg-blue-700 rounded-md text-white font-medium px-4 py-2 w-fit"
                   disabled
                 >
-                  Izberi kategorijo
+                  Izberi podkategorijo
                 </Button>
               )}
             </div>
