@@ -23,13 +23,13 @@
     "manufacturer": "DJI",
     "model": "Spark",
     "category": "A3",
-    "categoryPredPrehodnimObdobjem": "A1"
+    "categoryBeforeEndOfTransitionalPeriod": "A1"
   },
   {
     "manufacturer": "DJI",
     "model": "Mavic Air 1",
-    "category": "A1",
-    "categoryPredPrehodnimObdobjem": "A1"
+    "category": "A3",
+    "categoryBeforeEndOfTransitionalPeriod": "A1"
   },
   {
     "manufacturer": "DJI",
@@ -63,7 +63,7 @@
   },
   {
     "manufacturer": "DJI",
-    "model": "Mavic Air 3",
+    "model": "Air 3",
     "category": "A1"
   },
   {

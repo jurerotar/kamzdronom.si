@@ -4,4 +4,5 @@ export type Drone = {
   manufacturer: string;
   model: string;
   category: Category;
+  categoryBeforeEndOfTransitionalPeriod: Category;
 };

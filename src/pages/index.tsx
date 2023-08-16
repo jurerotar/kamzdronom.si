@@ -24,6 +24,9 @@ type HomePageProps = {
   zoneLinks: ZoneLinks;
 };
 
+const TRANSITIONAL_PERIOD_END_DATE = new Date('1.1.2024');
+const shouldConsiderTransitionalPeriod = Date.now() - TRANSITIONAL_PERIOD_END_DATE.getMilliseconds() >= 0;
+
 const HomePage: NextPage<HomePageProps> = (props) => {
   const {
     drones,
@@ -34,7 +37,15 @@ const HomePage: NextPage<HomePageProps> = (props) => {
   const [selectedDroneModel, setSelectedDroneModel] = useState<Drone | null>(null);
   const [selectedDroneCategory, setSelectedDroneCategory] = useState<Category | null>(null);
 
-  const selectedCategory = selectedDroneCategory ?? selectedDroneModel?.category ?? null;
+  const selectedCategory = (() => {
+    if(selectedDroneCategory !== null) {
+      return selectedDroneCategory;
+    }
+    if(shouldConsiderTransitionalPeriod && !!selectedDroneModel?.categoryBeforeEndOfTransitionalPeriod) {
+      return selectedDroneModel?.categoryBeforeEndOfTransitionalPeriod;
+    }
+    return selectedDroneModel?.category
+  })();
 
   const restrictionMapLink = zoneLinks.restrictionMapLinks[selectedDroneCategory ?? 'A1'];
   const suitabilityMapLink = zoneLinks.suitabilityMapLinks[selectedDroneCategory ?? 'A1'];
