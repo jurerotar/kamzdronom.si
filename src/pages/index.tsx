@@ -124,7 +124,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
               </Typography>
               {selectedCategory !== null && (
                 <StyledLink href={restrictionMapLink}>
-                  Karta omejitev {clsx(!!selectedCategory && `za kategorijo "${selectedCategory}"`)}
+                  Karta omejitev {clsx(!!selectedCategory && `za podkategorijo "${selectedCategory}"`)}
                 </StyledLink>
               )}
               {selectedCategory === null && (
@@ -153,7 +153,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
               </Typography>
               {selectedCategory !== null && (
                 <StyledLink href={suitabilityMapLink}>
-                  Karta primernosti {clsx(!!selectedCategory && `za kategorijo "${selectedCategory}"`)}
+                  Karta primernosti {clsx(!!selectedCategory && `za podkategorijo "${selectedCategory}"`)}
                 </StyledLink>
               )}
               {selectedCategory === null && (
