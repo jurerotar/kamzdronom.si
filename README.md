@@ -1,8 +1,8 @@
 <h1 style="text-align: center">
-  Jure Rotar - resume
+  KAMzDRONOM.si
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5eea382c-eaaa-49fd-bda0-7737391aa7e9/deploy-status)](https://app.netlify.com/sites/legendary-pothos-510f2b/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ab978e0-3c02-4005-a7ec-a6e1403c81d3/deploy-status)](https://app.netlify.com/sites/kamzdronom/deploys)
 
 ## Table of contents
 
@@ -19,7 +19,7 @@
 
 ```sh
 # clone the project
-git clone https://github.com/jurerotar/
+git clone https://github.com/jurerotar/kamzdronom.si.git
 
 # Install dependencies
 npm install
