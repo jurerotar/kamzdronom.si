@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Spletna stran Evropske agencije za varnost v letalstvu (EASA) – področje brezpilotnih zrakoplovov",
+    "href": "https://www.easa.europa.eu/en/domains/civil-drones"
+  },
+  {
+    "label": "Spletna stran Agencije za civilno letalstvo (CAA) – področje brezpilotnih zrakoplovov",
+    "href": "https://www.caa.si/brezpilotni-zrakoplovi.html"
+  },
+  {
+    "label": "Spletna stran Agencije za civilno letalstvo (CAA) – pogosto zastavljena vprašanja",
+    "href": "https://www.caa.si/faq.html "
+  },
+  {
+    "label": "Uredba o izvajanju izvedbene uredbe Komisije (EU) o pravilih in postopkih za upravljanje brezpilotnih zrakoplovov",
+    "href": "http://www.pisrs.si/Pis.web/pregledPredpisa?id=URED8075 "
+  },
+  {
+    "label": "Uradna karta geografskih območij letenja brezpilotnih zrakoplovov",
+    "href": "https://caa-slovenia.maps.arcgis.com/apps/webappviewer/index.html?id=25ba69037c264c5faa5381174f76f861&fbclid=IwAR1vx5KkufPjZmLba7aFg-02nuUDEDRgAVnqPn6qJj4T1LYmxUrq8LlDP8Y"
+  },
+  {
+    "label": "Povzetek zahtev odprte kategorija letenja",
+    "href": "https://www.caa.si/upload/editor/file/file0378d425b967c22.docx"
+  },
+  {
+    "label": "NOTAM sporočila (zapore)",
+    "href": "https://www.sloveniacontrol.si/Strani/Zapore.aspx  "
+  },
+  {
+    "label": "NOTAM zemljevid in elektronski AIP",
+    "href": "https://www.sloveniacontrol.si/"
+  }
+]

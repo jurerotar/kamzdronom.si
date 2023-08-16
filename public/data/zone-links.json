@@ -1,0 +1,12 @@
+{
+  "restrictionMapLinks": {
+    "A1": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=b82b68f6578f4c3ab739d47cc5de9b14",
+    "A2": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=b82b68f6578f4c3ab739d47cc5de9b14",
+    "A3": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=8694539775f64cac9a96e809a218628a"
+  },
+  "suitabilityMapLinks": {
+    "A1": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=c1cf56ee6218428c83621783acce4dc8",
+    "A2": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=c1cf56ee6218428c83621783acce4dc8",
+    "A3": "https://uni-lj.maps.arcgis.com/apps/instant/portfolio/index.html?appid=a889ba94904744c5845b6b4618e485b5"
+  }
+}

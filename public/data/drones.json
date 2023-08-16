@@ -1,0 +1,134 @@
+[
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic Mini",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mini SE",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mini 2",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mini 3 Pro",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Spark",
+    "category": "A3",
+    "categoryPredPrehodnimObdobjem": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic Air 1",
+    "category": "A1",
+    "categoryPredPrehodnimObdobjem": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic Pro / Mavic Pro Platinum",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic 2 Pro / Mavic 2 Zoom",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic 3",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic 3 Classic",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic 3 Pro",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic Air 2",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Mavic Air 3",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Air 2S",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "FPV",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Phantom 3",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Phantom 4",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Inspire 1",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Inspire 2",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Inspire 3",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "DJI",
+    "model": "Matrice",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "Autel",
+    "model": "EVO Nano",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "Autel",
+    "model": "EVO Nano+",
+    "category": "A1"
+  },
+  {
+    "manufacturer": "Autel",
+    "model": "EVO II",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "Autel",
+    "model": "EVO Lite",
+    "category": "A3"
+  },
+  {
+    "manufacturer": "Autel",
+    "model": "EVO Lite+",
+    "category": "A3"
+  }
+]

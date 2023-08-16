@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.idea/
+.vscode/
+public/
+*.md
+*.json
+*.js

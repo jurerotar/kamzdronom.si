@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Dejanska raba kmetijskih in gozdnih zemljišč",
+    "source": "MKGP",
+    "updatedAt": "2023",
+    "type": "Glavni"
+  },
+  {
+    "title": "Evidenca državne meje",
+    "source": "GURS",
+    "updatedAt": "2018",
+    "type": "Glavni"
+  },
+  {
+    "title": "Geografska območja prepovedi letenja",
+    "source": "CAA",
+    "updatedAt": "2023",
+    "type": "Glavni"
+  },
+  {
+    "title": "Gospodarska javna infrastruktura",
+    "source": "GURS",
+    "updatedAt": "2022",
+    "type": "Glavni"
+  },
+  {
+    "title": "Kataster nepremičnin",
+    "source": "GURS",
+    "updatedAt": "2023",
+    "type": "Glavni"
+  },
+  {
+    "title": "Merilna mesta (meteorologija)",
+    "source": "ARSO",
+    "updatedAt": "2011",
+    "type": "Glavni"
+  },
+  {
+    "title": "Raba tal (OSM)",
+    "source": "OSM",
+    "updatedAt": "2023",
+    "type": "Glavni"
+  },
+  {
+    "title": "Register naravnih vrednot",
+    "source": "ARSO",
+    "updatedAt": "2015",
+    "type": "Glavni"
+  },
+  {
+    "title": "Register prostorskih enot",
+    "source": "GURS",
+    "updatedAt": "2022",
+    "type": "Glavni"
+  },
+  {
+    "title": "Zavarovana območja (conacija)",
+    "source": "ARSO",
+    "updatedAt": "2022",
+    "type": "Glavni"
+  },
+  {
+    "title": "Zavarovana območja (poligoni)",
+    "source": "ARSO",
+    "updatedAt": "2022",
+    "type": "Glavni"
+  },
+  {
+    "title": "Zbirka topografskih podatkov",
+    "source": "GURS",
+    "updatedAt": "2002-2021",
+    "type": "Glavni"
+  }
+]
