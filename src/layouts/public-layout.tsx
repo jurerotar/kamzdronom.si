@@ -1,15 +1,16 @@
-import React, { FCWithChildren, HTMLProps, useState } from 'react';
+import React, { FCWithChildren, useState } from 'react';
 import NextImage from 'next/image';
 import Link from 'next/link';
 import { LinkProps } from 'next/dist/client/link';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-const Logo = () => {
+const Logo: React.FC<Omit<LinkProps, 'href'>> = (props) => {
   return (
     <Link
-      href="/"
       className="flex items-center justify-start flex-1 gap-3"
+      {...props}
+      href="/"
     >
       <div className="flex gap-2 items-center">
         <div className="w-[60px] h-[40px] md:w-[90px] md:h-[60px]">
@@ -37,7 +38,6 @@ const CustomLink: FCWithChildren<LinkProps> = (props) => {
   const { asPath } = useRouter();
 
   const isActive = asPath === href;
-
 
   return (
     <Link
@@ -82,7 +82,7 @@ export const PublicLayout: FCWithChildren = (props) => {
             {isMobileNavigationOpened && (
               <div className="flex flex-col absolute top-4 left-4 right-4 w-[calc(100vw-2rem)] p-4 bg-[#1A1A1A] rounded-md">
                 <div className="flex justify-between pb-2 border-b border-dashed border-gray-800 mb-2">
-                  <Logo />
+                  <Logo onClick={() => setIsMobileNavigationOpened(false)} />
                   <button
                     type="button"
                     onClick={() => setIsMobileNavigationOpened(false)}
