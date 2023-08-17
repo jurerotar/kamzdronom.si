@@ -3,7 +3,9 @@ import { GetStaticProps, NextPage } from 'next';
 import { Breadcrumbs } from '@components/breadcrumbs';
 import { Typography } from '@material-tailwind/react/components/Typography';
 import references from '@public/data/references.json';
+import airportSchedule from '@public/data/airport-schedules.json';
 import { StyledLink } from '@components/styled-link';
+import {AirportSchedule} from "@interfaces/models/airport-schedule";
 
 const breadcrumbs = [
   {
@@ -11,6 +13,8 @@ const breadcrumbs = [
     href: '/pomembne-povezave'
   }
 ];
+
+const weekdays = ["Ponedeljek", "Torek", "Sreda", "Četrtek", "Petek", "Sobota", "Nedelja"];
 
 type Reference = {
   href: string;
@@ -40,6 +44,7 @@ const ReferencesPage: NextPage<ReferencesPageProps> = (props) => {
         <Typography className="flex flex-col gap-2 text-left text-white w-full">
           {references.map((reference: Reference) => (
             <a
+              key={reference.href}
               href={reference.href}
               rel="noopener"
               className="font-semibold underline decoration-blue-600 flex colors-transition hover:text-gray-400"
@@ -48,6 +53,70 @@ const ReferencesPage: NextPage<ReferencesPageProps> = (props) => {
             </a>
           ))}
         </Typography>
+        <div className="flex flex-col gap-2 w-full">
+          <Typography
+            variant="h3"
+            className="text-white text-xl font-medium text-left"
+          >
+            Delovni časi letališč
+          </Typography>
+          <div className="flex w-full overflow-x-scroll md:overflow-x-auto">
+            <table className="text-white block border-2 border-white whitespace-nowrap">
+              <thead className="font-semibold">
+              <tr>
+                <td
+                  className="border-2 border-white p-1"
+                  rowSpan={2}
+                >
+                  Letališče
+                </td>
+                <td
+                  className="border-2 border-white p-1"
+                  colSpan={7}
+                >
+                  Lokalni zimski čas (UTC + 1)
+                </td>
+                <td
+                  className="border-2 border-white p-1"
+                  colSpan={7}
+                >
+                  Lokalni poletni čas (UTC + 2)
+                </td>
+              </tr>
+              <tr>
+                {[...weekdays, ...weekdays].map((day: string, index) => (
+                  <td
+                    className="border-2 border-white p-1"
+                    key={index}
+                  >
+                    {day}
+                  </td>
+                ))}
+              </tr>
+              </thead>
+              <tbody>
+              {airportSchedule.map((airport: AirportSchedule) => (
+                <tr
+                  key={airport.name}
+                  className="border-2 border-white"
+                >
+                  <td className="border-2 border-white p-1">
+                    {airport.name}
+                  </td>
+                  {[...airport.schedule.winter, ...airport.schedule.summer].map((day: string, index: number) => (
+                    <td
+                      key={index}
+                      className="border-2 border-white p-1"
+                    >
+                      {day}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div className="flex w-full justify-start">
           <StyledLink href="/o-projektu">
             Več o projektu
@@ -61,7 +130,8 @@ const ReferencesPage: NextPage<ReferencesPageProps> = (props) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      references: references as Reference[]
+      references: references as Reference[],
+      airportSchedule: airportSchedule as AirportSchedule[]
     }
   }
 }
