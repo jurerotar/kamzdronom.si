@@ -4,7 +4,6 @@ import Head from 'next/head';
 import '@styles/app.scss';
 import { PublicLayout } from '@layouts/public-layout';
 import { Montserrat } from 'next/font/google';
-import { ThemeProvider } from "@material-tailwind/react";
 
 const montserrat = Montserrat({
   subsets: ['latin', 'latin-ext'],
@@ -32,11 +31,9 @@ const Application = (props: AppProps): JSX.Element => {
           }}
         />
       </Head>
-      <ThemeProvider>
-        <PublicLayout>
-          <Component {...pageProps} />
-        </PublicLayout>
-      </ThemeProvider>
+      <PublicLayout>
+        <Component {...pageProps} />
+      </PublicLayout>
     </>
   );
 };

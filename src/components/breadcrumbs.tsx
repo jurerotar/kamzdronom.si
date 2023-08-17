@@ -1,5 +1,5 @@
 import React from 'react';
-import { Breadcrumbs as MUIBreadcrumbs } from '@material-tailwind/react';
+import { Breadcrumbs as MUIBreadcrumbs } from '@material-tailwind/react/components/Breadcrumbs';
 import Link from 'next/link';
 
 export type Breadcrumb = {

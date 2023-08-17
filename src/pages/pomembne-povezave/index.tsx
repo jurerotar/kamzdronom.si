@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetStaticProps, NextPage } from 'next';
 import { Breadcrumbs } from '@components/breadcrumbs';
-import { Typography } from '@material-tailwind/react';
+import { Typography } from '@material-tailwind/react/components/Typography';
 import references from '@public/data/references.json';
 import { StyledLink } from '@components/styled-link';
 
