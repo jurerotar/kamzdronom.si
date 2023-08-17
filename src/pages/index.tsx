@@ -46,7 +46,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
     if(shouldConsiderTransitionalPeriod && !!selectedDroneModel?.categoryBeforeEndOfTransitionalPeriod) {
       return selectedDroneModel?.categoryBeforeEndOfTransitionalPeriod;
     }
-    return selectedDroneModel?.category
+    return selectedDroneModel?.category;
   })();
 
   const restrictionMapLink = zoneLinks.restrictionMapLinks[selectedDroneCategory ?? 'A1'];
@@ -135,12 +135,12 @@ const HomePage: NextPage<HomePageProps> = (props) => {
                 sloje omejitev (neprimerna območja oz. območja prepovedi), preostali del proučevanega območja pa predstavljajo za letenje
                 dovoljena območja, ki se med seboj praviloma ne razlikujejo po primernosti.
               </Typography>
-              {selectedCategory !== null && (
+              {!!selectedCategory && (
                 <StyledLink href={restrictionMapLink}>
                   Karta omejitev {clsx(!!selectedCategory && `za podkategorijo "${selectedCategory}"`)}
                 </StyledLink>
               )}
-              {selectedCategory === null && (
+              {!selectedCategory && (
                 <Button
                   className="flex justify-center items-center bg-blue-600 colors-transition hover:bg-blue-700 rounded-md text-white font-medium px-4 py-2 w-fit"
                   disabled
@@ -164,12 +164,12 @@ const HomePage: NextPage<HomePageProps> = (props) => {
                 ki se med seboj, na podlagi vpliva obteženih dejavnikov (npr. oddaljenost od stanovanjskih, poslovnih, rekreacijskih območij),
                 razlikujejo po stopnji primernosti (od najmanjše do največje primernosti).
               </Typography>
-              {selectedCategory !== null && (
+              {!!selectedCategory && (
                 <StyledLink href={suitabilityMapLink}>
                   Karta primernosti {clsx(!!selectedCategory && `za podkategorijo "${selectedCategory}"`)}
                 </StyledLink>
               )}
-              {selectedCategory === null && (
+              {!selectedCategory && (
                 <Button
                   className="flex justify-center items-center bg-blue-600 colors-transition hover:bg-blue-700 rounded-md text-white font-medium px-4 py-2 w-fit"
                   disabled
