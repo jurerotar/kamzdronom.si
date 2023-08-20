@@ -58,7 +58,7 @@ const ReferencesPage: NextPage<ReferencesPageProps> = (props) => {
             variant="h3"
             className="text-white text-xl font-medium text-left"
           >
-            Delovni časi letališč
+            Obratovalni čas letališč
           </Typography>
           <div className="flex w-full overflow-x-scroll md:overflow-x-auto">
             <table className="text-white block border-2 border-white whitespace-nowrap">
