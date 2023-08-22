@@ -49,8 +49,8 @@ const HomePage: NextPage<HomePageProps> = (props) => {
     return selectedDroneModel?.category;
   })();
 
-  const restrictionMapLink = zoneLinks.restrictionMapLinks[selectedDroneCategory ?? 'A1'];
-  const suitabilityMapLink = zoneLinks.suitabilityMapLinks[selectedDroneCategory ?? 'A1'];
+  const restrictionMapLink = zoneLinks.restrictionMapLinks[selectedCategory ?? 'A1'];
+  const suitabilityMapLink = zoneLinks.suitabilityMapLinks[selectedCategory ?? 'A1'];
 
   return (
     <>
